@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Alfa Slab One", serif;
+  --font-sans: "Inter", sans-serif;
+  --color-meiaum-black: #10001a;
+  --color-meiaum-yellow: #ffd14a;
+  --color-meiaum-orange: #f56a4d;
+  --color-meiaum-red: #ec2f60;
+  --color-meiaum-purple: #bd2871;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer components {
+  .timer {
+    @apply flex gap-1;
+  }
+
+  .digit {
+    @apply w-40 h-52 bg-meiaum-red/20;
+  }
+}
